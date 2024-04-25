@@ -29,11 +29,21 @@ body {
     flex: 0 0 50%;
     max-width: 50%;
 }
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
 .header {
     height: 100px;
     background-color: rgba(255, 255, 255   , 0.75); 
     display: flex;
     align-items: center;
+}
+.main {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 .menu {
     display: flex;
