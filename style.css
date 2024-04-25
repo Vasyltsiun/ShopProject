@@ -32,8 +32,11 @@ body {
     align-items: center;
 }
 .col-4 {
+    display: flex;
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
+    height: 650px;
+
 }
 .col-6 {
     flex: 0 0 50%;
@@ -42,6 +45,8 @@ body {
 .col-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%;
+    color: white;
+    font-size: 48px;
 }
 .col-9 {
     flex: 0 0 75%;
@@ -50,7 +55,10 @@ body {
 .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
-
+}
+.sort {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
 }
 .header {
     height: 100px;
@@ -203,4 +211,37 @@ input::placeholder {
     margin-top: 40px;
     margin-right: -125px;
     background-repeat: no-repeat;
+}
+
+
+.device-content {
+    display: flex;
+    height: 180px;
+    width: 270px;
+    background-color: rgba(255, 255, 255   , 0.75);
+}
+.like {
+    background-image: url(images/like.png);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    border: 1px solid #2c71b8;
+    background-color: rgba(255, 255, 255   , 0.75);
+    background-position: center;
+
+}
+.square {
+    background-image: url(images/square.png);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    border: 1px solid #2c71b8;
+    background-color: rgba(255, 255, 255   , 0.75);
+    background-position: center;
+
+}
+
+.img-device {
+    justify-content: center;
+    align-items: center;
 }
