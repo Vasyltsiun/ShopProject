@@ -249,10 +249,14 @@ input::placeholder {
     margin: 10px;
 }
 .img {
-    margin-left: 90%;
+    margin-left: 65%;
     height: 90px;
-    width: 100px;
-
+    width: 120px;
+}
+.img-size {
+    margin-left: 220%;
+    height: 90px;
+    width: 50px;
 }
 
 
