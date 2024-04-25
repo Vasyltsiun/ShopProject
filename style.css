@@ -6,6 +6,12 @@ body {
     font-family: "Roboto", sans-serif;
     background-image: url("images/patt.png")
 }
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
 .container {
     width: 1200px;
     margin: 0 auto;
