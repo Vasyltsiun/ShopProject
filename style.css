@@ -32,17 +32,16 @@ body {
     align-items: center;
 }
 .col-4 {
-    display: flex;
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
     height: 650px;
-
 }
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
 }
 .col-8 {
+    display: flex;
     flex: 0 0 66.66667%;
     max-width: 66.66667%;
     color: white;
@@ -68,7 +67,7 @@ body {
 }
 .main {
     display: flex;
-    align-items: center;
+
     width: 1200px;
     margin: 0 auto;
 }
@@ -215,18 +214,21 @@ input::placeholder {
 
 
 .device-content {
+    align-items: center;
+    justify-content: space-between;
     display: flex;
     height: 180px;
     width: 270px;
     background-color: rgba(255, 255, 255   , 0.75);
 }
 .like {
+
     background-image: url(images/like.png);
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
     border: 1px solid #2c71b8;
-    background-color: rgba(255, 255, 255   , 0.75);
+    background-color: rgba(255, 255, 255   , 0.25);
     background-position: center;
 
 }
@@ -236,12 +238,94 @@ input::placeholder {
     width: 30px;
     background-repeat: no-repeat;
     border: 1px solid #2c71b8;
-    background-color: rgba(255, 255, 255   , 0.75);
+    background-color: rgba(255, 255, 255   , 0.25);
     background-position: center;
 
 }
 
 .img-device {
-    justify-content: center;
-    align-items: center;
+
+
+}
+.buttons {
+    align-self: flex-start;
+    margin: 10px;
+}
+.img {
+    height: 100px;
+    width: 90px;
+}
+
+
+
+
+.device-name {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.text-device {
+    color: white;
+    font-size: 21px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.type {
+    color: white;
+    font-size: 21px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+span {
+    font-weight: bold;
+}
+.screen {
+    color: white;
+    font-size: 21px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.ram {
+    color: white;
+    font-size: 21px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.cost {
+    color: white;
+    font-size: 48px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.cent {
+    color: white;
+    font-size: 24px;
+    margin-left: 15px;
+}
+.button-details {
+    margin-left: 30px;
+    font-size: 21px;
+    color: white;
+    height: 50px;
+    width: 215px;
+    background-color: rgba(255, 255, 255   , 0);
+    border: 1px solid white;
+}
+.button-add {
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 21px;
+    color: white;
+    height: 50px;
+    width: 215px;
+    background-color: rgba(255, 255, 255   , 0.25);
+    border: none;
 }
