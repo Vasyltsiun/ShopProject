@@ -36,7 +36,6 @@ body {
     max-width: 30%;
     margin: 15px;
     height: 650px;
-
     border: 1px solid white;
 }
 .col-6 {
@@ -49,6 +48,8 @@ body {
     max-width: 66.66667%;
     color: white;
     font-size: 48px;
+    margin: 15px 0 15px 15px;
+
 }
 .col-9 {
     flex: 0 0 75%;
@@ -179,6 +180,7 @@ input::placeholder {
 .dropbtn {
     width: 150px;
     height: 50px;
+
 }
 .drop-content {
     display: none;
@@ -331,4 +333,34 @@ span {
     width: 215px;
     background-color: rgba(255, 255, 255   , 0.25);
     border: none;
+}
+
+
+.sort {
+    font-size: 21px;
+    display: flex;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    align-items: center;
+}
+.dropbtn-sort {
+    padding-left: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255   ,0);
+    display: flex;
+    position: relative;
+    width: 275px;
+    height: 40px;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.drop-content-sort {
+    position: absolute;
+    display: none;
+    width: 270px;
+
+
+
 }
