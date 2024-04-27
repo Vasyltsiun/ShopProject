@@ -337,31 +337,63 @@ span {
 }
 
 
-.sort {
-    font-size: 21px;
+
+
+.products-menu-sort {
+    position: relative;
     display: flex;
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+    justify-content: center;
     align-items: center;
+    flex: 0 0 30%;
+    max-width: 30%;
+    align-items: center;
+    /*font-weight: 300;*/
+
+
 }
 .dropbtn-sort {
-    padding-left: 20px;
-    color: white;
-    background-color: rgba(255, 255, 255   ,0);
-    display: flex;
-    position: relative;
+    display: inline;
     width: 275px;
     height: 40px;
-    justify-content: left;
-    align-items: center;
+    color: white;
+    font-size: 21px;
+    border: 1px solid white;
+    align-content: center;
+    padding-left: 20px;
+    background-color: #2c71b8;
+    text-decoration: none;
+}
+.drop-content-sort {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 78%;
+    width: 280px;
+    height: 40px;
+    left: 0;
+    background-color: #2c71b8;
+    font-size: 21px;
     border: 1px solid white;
 }
-
-.drop-content-sort {
-    position: absolute;
-    display: none;
-    width: 270px;
-
-
+.products-menu-sort:hover .drop-content-sort {
+    display: block;
+}
+.drop-content-sort a {
+    color: white;
+    background-color: #2c71b8;
+    justify-content: left;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
 
 }
+.drop-content-sort a:hover {
+    background-color: white;
+    color: #2c71b8;
+    height: 40px;
+}
+.products-menu-sort:hover .dropbtn-sort {
+    background-color: #2c71b8;
+    color: white;
+}
+
