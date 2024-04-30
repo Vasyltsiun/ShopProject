@@ -366,12 +366,15 @@ span {
     margin-left: 15px;
     margin-top: 20px;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: center
+    
 }
 .cent {
     color: white;
     font-size: 24px;
     margin-left: 15px;
+    margin-top: 5px;
 }
 .button-details {
     margin-top: 20px;
@@ -425,10 +428,10 @@ span {
     display: none;
     position: absolute;
     z-index: 1;
-    top: 78%;
-    width: 280px;
+    top: 75%;
+    width: 275px;
     height: 40px;
-    left: 0;
+    left: 2px;
     background-color: #2c71b8;
     font-size: 21px;
     border: 1px solid white;
