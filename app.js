@@ -3,11 +3,20 @@ let addToCartBtns = document.querySelectorAll(".button-add");
 
 console.log(productCountElement);
 console.log(addToCartBtns);
-
 addToCartBtns.forEach((btn) =>
   btn.addEventListener("click", function () {
-    debugger;
     let qty = productCountElement.innerHTML;
     productCountElement.innerHTML = ++qty;
+  })
+);
+
+let likeButtons = document.querySelectorAll(".like");
+likeButtons.forEach((btn) =>
+  btn.addEventListener("click", function () {
+    if (btn.classList.contains("liked")) {
+      btn.classList.remove("liked");
+    } else {
+      btn.classList.add("liked");
+    }
   })
 );

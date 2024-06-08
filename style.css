@@ -571,3 +571,9 @@ input[type="checkbox"]:checked + label::before {
     font-weight: 300;
     text-decoration: none;
 }
+
+
+.liked {
+    background-image: url(images/like-hover.png);
+    background-repeat: no-repeat;
+}
