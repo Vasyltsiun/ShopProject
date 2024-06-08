@@ -6,6 +6,8 @@ console.log(addToCartBtns);
 
 addToCartBtns.forEach((btn) =>
   btn.addEventListener("click", function () {
-    console.log("clicked");
+    debugger;
+    let qty = productCountElement.innerHTML;
+    productCountElement.innerHTML = ++qty;
   })
 );
