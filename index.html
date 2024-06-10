@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop-project</title>
     <link rel="stylesheet" href="reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,12 +64,14 @@
             </div>
           </div>
         </header>
-        <div class="slide">
-          <div class="container-slide">
-            <div class="col-1-left"><button class="button-slide"></button></div>
-            <div class="col-10">Slide #1</div>
-            <div class="col-1-right">
-              <button class="button-slide"></button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="slider-wrapper">
+                <div>Slide 1</div>
+                <div>Slide 2</div>
+                <div>Slide 3</div>
+              </div>
             </div>
           </div>
         </div>
@@ -264,7 +270,7 @@
                 <div class="cost">$1250<span class="cent">99</span></div>
                 <div class="product-quantity">
                   <button class="decrement-button">-</button>
-                  <input type="text" value="1" />
+                  <input type="text" value="1" readonly />
                   <button class="increment-button">+</button>
                 </div>
                 <button class="button-details">MORE DETAILS</button>
@@ -365,6 +371,34 @@
       </div>
       <footer class="footer">Footer</footer>
     </div>
+
+    <div class="modal">
+      <div class="modal-block">
+        <form>
+          <div class="form-wrapper">
+            <div class="btn-close">X</div>
+            <h3>Please call for more details</h3>
+            <div class="form-field">
+              <input type="text" placeholder="Your name" />
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="Your phone" />
+            </div>
+            <button>Please call</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
