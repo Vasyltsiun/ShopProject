@@ -104,6 +104,7 @@ body {
     max-width: 100%;
     display: flex;
     border-bottom: 1px solid white;
+
 }
 .button-slide {
     height: 50px;
@@ -114,16 +115,51 @@ body {
 .slider-wrapper > div {
     text-align: center;
     font-size: 30px;
-    padding: 150px 0;
+    padding: 150px;
     color: white;
+    font-size: 100px;
 }
 .slick-prev:before,
 .slick-next:before {
-    color: red;
+    content: none;
+}
+.slick-prev {
+    background-image: url(images/arrow-left-50.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.slick-next {
+    background-image: url(images/arrow-right-50.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
 }
 .slick-dots li.slick-active button:before {
-    color: yellow;
+    content: none;
 }
+.slick-dots li button:before {
+    content: none;
+}
+
+.slick-dots li{
+    width: 15px;
+    height: 15px;
+    border:  solid 1px white;
+    margin: 0 15px;
+
+}
+li.slick-active {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
 .modal {
     position: fixed;
     top: 0;
