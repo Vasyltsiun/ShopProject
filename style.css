@@ -168,7 +168,7 @@ li.slick-active {
 
 
 
-
+/*Модальне вікно*/
 .modal {
     position: fixed;
     top: 0;
@@ -186,6 +186,7 @@ li.slick-active {
     padding: 15px;
     background-color: white;
     margin: 80px auto;
+
 }
 .form-field {
     margin: 10px 0;

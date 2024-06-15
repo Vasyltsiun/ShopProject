@@ -70,9 +70,16 @@ $(".slider-wrapper").slick({
 });
 
 //More details (модельне вікно)
-let moreDetailsBtns = document.querySelectorAll(".button-details");
-let modalWindow = document.querySelectorAll(".modal");
 
-moreDetailsBtns.onclick = () => {
-  modalWindow.style.display = "block";
-};
+let moreDetailsBtns = document.querySelectorAll(".button-details");
+let showWindowBlock = document.querySelector(".modal");
+let closeButton = document.querySelector(".btn-close");
+
+moreDetailsBtns.forEach((btn) =>
+  btn.addEventListener("click", function () {
+    showWindowBlock.style.display = "block";
+  })
+);
+closeButton.addEventListener("click", function () {
+  showWindowBlock.style.display = "none";
+});
