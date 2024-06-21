@@ -200,6 +200,9 @@ li.slick-active {
     text-align: right;
     cursor: pointer;
 }
+.show {
+    display: block;
+}
 
 
 
