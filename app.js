@@ -202,5 +202,11 @@ function Counter(incrementBtns, decrementBtns, inputFields) {
   );
 }
 
-let counter1 = new Counter(incrementBtns[0], decrementBtns[0], inputFields[0]);
-console.log(counter1);
+for (let i = 0; i < incrementBtns.length; i++) {
+  let counter1 = new Counter(
+    incrementBtns[i],
+    decrementBtns[i],
+    inputFields[i]
+  );
+  console.log(counter1);
+}
