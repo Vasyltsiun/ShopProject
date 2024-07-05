@@ -1,15 +1,15 @@
 let productCountElement = document.getElementById("products-count");
-let addToCartBtns = document.querySelectorAll(".button-add");
+//let addToCartBtns = document.querySelectorAll(".button-add");
 
 /*console.log(productCountElement);*/
-console.log(addToCartBtns);
+/*console.log(addToCartBtns);
 addToCartBtns.forEach((btn) =>
   btn.addEventListener("click", function () {
     let qty = productCountElement.innerHTML;
     productCountElement.innerHTML = ++qty;
     /*productCountElement.textContent = +productCountElement.textContent + 1; // рішення Ярослава*/
-  })
-);
+/*})
+);*/
 
 let likeButtons = document.querySelectorAll(".like");
 /*for (let i = 0; i < likeButtons.length; i++) {
@@ -167,11 +167,14 @@ const decrementBtns = document.querySelectorAll(".decrement-button");
 const incrementBtns = document.querySelectorAll(".increment-button");
 const inputFields = document.querySelectorAll(".product-quantity input");
 
-function Counter(incrementBtns, decrementBtns, inputFields) {
+let addToCartBtns = document.querySelectorAll(".button-add");
+
+function Counter(incrementBtns, decrementBtns, inputFields, addToCartBtns) {
   this.domRefs = {
     incrementBtns,
     decrementBtns,
     inputFields,
+    addToCartBtns,
   };
   this.toggleDisableState = function () {
     const count = this.domRefs.inputFields.value;
@@ -200,13 +203,23 @@ function Counter(incrementBtns, decrementBtns, inputFields) {
     "click",
     this.decrement.bind(this)
   );
+  this.addToCart = function () {
+    let qty = productCountElement.innerHTML;
+    productCountElement.innerHTML =
+      qty * 1 + this.domRefs.inputFields.value * 1;
+  };
+  this.domRefs.addToCartBtns.addEventListener(
+    "click",
+    this.addToCart.bind(this)
+  );
 }
 
 for (let i = 0; i < incrementBtns.length; i++) {
   let counter1 = new Counter(
     incrementBtns[i],
     decrementBtns[i],
-    inputFields[i]
+    inputFields[i],
+    addToCartBtns[i]
   );
   console.log(counter1);
 }

@@ -527,7 +527,6 @@ span {
 .drop-content-sort {
     display: none;
     position: absolute;
-    z-index: 1;
     top: 75%;
     width: 275px;
     height: 40px;
@@ -538,6 +537,7 @@ span {
 }
 .products-menu-sort:hover .drop-content-sort {
     display: block;
+    z-index: 1;
 }
 .drop-content-sort a {
     color: white;
